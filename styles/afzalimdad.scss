@@ -1,0 +1,45 @@
+@import "./theme.scss";
+
+.fullscreen-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); // Soft gradient
+  color: #2c3e50;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 8rem); // Responsive font size
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #34495e;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    color: #1abc9c;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0; // Remove default margin for fullscreen layout
+  padding: 0;
+  overflow: hidden; // Prevent scrolling for a clean fullscreen effect
+}
