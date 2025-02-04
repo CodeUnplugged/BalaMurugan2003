@@ -101,23 +101,324 @@
 //   }
 // }
 
+// @import "./theme.scss";
+
+// .ai-reviews {
+//   width: 100vw;
+//   min-height: 60vh;
+//   //background: linear-gradient(135deg, $themeColor1, $themeColor2);
+//   background: black;
+//   color: #ffffff;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 50px 20px;
+
+//   .ai-reviews-heading {
+//     font-size: clamp(20px, 5vw, 36px);
+//     font-weight: bold;
+//     margin-bottom: 20px;
+//     text-align: center;
+//   }
+
+//   .ai-reviews-container {
+//     width: 100%;
+//     max-width: 900px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
+//   }
+
+//   .swiper-3d {
+//     perspective: 1800px;
+//   }
+
+//   .ai-reviews-swiper {
+//     width: 100%;
+//     max-width: 1000px;
+//     padding: 30px 10px;
+
+//     .swiper-slide {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       perspective: 1000px;
+//     }
+
+//     .ai-review-card {
+//       background: rgba(255, 255, 255, 0.1);
+//       color: #ffffff;
+//       border-radius: 20px;
+//       padding: 25px;
+//       width: 300px; // 🔹 Fixed width
+//       height: 320px; // 🔹 Fixed height
+//       text-align: center;
+//       box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.8);
+//       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+//       overflow: hidden;
+//       backdrop-filter: blur(10px);
+//       border: 1px solid rgba(255, 255, 255, 0.2);
+
+//       &:hover {
+//         transform: scale(1.05);
+//         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+//       }
+
+//       .ai-review-client {
+//         font-size: clamp(12px, 4vw, 16px);
+//         font-weight: bold;
+//         margin-bottom: 8px;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+//       }
+
+//       .ai-review-text {
+//         font-style: italic;
+//         font-size: clamp(14px, 4vw, 16px);
+//         line-height: 1.4;
+//         max-height: 180px; // 🔹 Ensures text doesn't expand card height
+//         overflow-y: auto; // 🔹 Enables scrolling if text is too long
+//         padding: 8px;
+//         text-align: center;
+//         word-break: break-word;
+//       }
+//     }
+//   }
+
+//   .swiper-pagination-bullet {
+//     background: $themeColor4;
+//     opacity: 0.8;
+
+//     &.swiper-pagination-bullet-active {
+//       background: $themeColor3;
+//       transform: scale(1.2);
+//     }
+//   }
+
+//   /* 📱 Mobile & Tablet View */
+//   @media (max-width: 768px) {
+//     padding: 30px 10px;
+
+//     .ai-reviews-heading {
+//       font-size: 22px;
+//       margin-bottom: 15px;
+//     }
+
+//     .ai-reviews-swiper {
+//       max-width: 100%;
+//       padding: 20px 5px;
+
+//       .ai-review-card {
+//         width: 90%; /* Full width for mobile */
+//         height: 300px; // 🔹 Fixed height for mobile screens
+//         padding: 20px;
+
+//         .ai-review-text {
+//           font-size: 14px;
+//           max-height: 160px; // 🔹 Prevents text overflow
+//         }
+//       }
+//     }
+//   }
+
+//   /* 📱 Small Mobile Screens */
+//   @media (max-width: 480px) {
+//     .ai-reviews-heading {
+//       font-size: 20px;
+//       margin-bottom: 10px;
+//     }
+
+//     .ai-reviews-swiper {
+//       padding: 15px 0;
+
+//       .ai-review-card {
+//         width: 95%;
+//         height: 280px; // 🔹 Smaller height for small screens
+//         padding: 18px;
+
+//         .ai-review-text {
+//           font-size: 13px;
+//           max-height: 140px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// @import "./theme.scss";
+
+// .ai-reviews {
+//   width: 100vw;
+//   min-height: 60vh;
+//   background: black;
+//   color: #ffffff;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 40px 15px;
+
+//   .ai-reviews-heading {
+//     font-size: clamp(20px, 5vw, 34px);
+//     font-weight: bold;
+//     margin-bottom: 15px;
+//     text-align: center;
+//   }
+
+//   .ai-reviews-container {
+//     width: 100%;
+//     max-width: 900px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
+//   }
+
+//   .swiper-3d {
+//     perspective: 1800px;
+//   }
+
+//   .ai-reviews-swiper {
+//     width: 100%;
+//     max-width: 1000px;
+//     padding: 20px 10px;
+
+//     .swiper-slide {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       perspective: 1000px;
+//     }
+
+//     .ai-review-card {
+//       background: rgba(255, 255, 255, 0.1);
+//       color: #ffffff;
+//       border-radius: 20px;
+//       padding: 20px;
+//       width: 90%;
+//       max-width: 300px;
+//       height: auto;
+//       min-height: 280px;
+//       text-align: center;
+//       box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.8);
+//       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+//       overflow: hidden;
+//       backdrop-filter: blur(10px);
+//       border: 1px solid rgba(255, 255, 255, 0.2);
+
+//       &:hover {
+//         transform: scale(1.05);
+//         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+//       }
+
+//       .ai-review-client {
+//         font-size: clamp(12px, 4vw, 16px);
+//         font-weight: bold;
+//         margin-bottom: 8px;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+//       }
+
+//       .ai-review-text {
+//         font-style: italic;
+//         font-size: clamp(14px, 4vw, 16px);
+//         line-height: 1.4;
+//         max-height: 160px;
+//         overflow-y: auto;
+//         padding: 8px;
+//         text-align: center;
+//         word-break: break-word;
+//       }
+//     }
+//   }
+
+//   .swiper-pagination-bullet {
+//     background: $themeColor4;
+//     opacity: 0.8;
+
+//     &.swiper-pagination-bullet-active {
+//       background: $themeColor3;
+//       transform: scale(1.2);
+//     }
+//   }
+
+//   /* Responsive for Tablets */
+//   @media (max-width: 768px) {
+//     padding: 30px 10px;
+
+//     .ai-reviews-heading {
+//       font-size: 22px;
+//       margin-bottom: 15px;
+//     }
+
+//     .ai-reviews-swiper {
+//       max-width: 100%;
+//       padding: 20px 5px;
+
+//       .ai-review-card {
+//         width: 95%;
+//         min-height: 260px;
+//         padding: 20px;
+
+//         .ai-review-text {
+//           font-size: 14px;
+//           max-height: 140px;
+//         }
+//       }
+//     }
+//   }
+
+//   /* Responsive for Small Mobile Screens */
+//   @media (max-width: 480px) {
+//     .ai-reviews-heading {
+//       font-size: 20px;
+//       margin-bottom: 10px;
+//     }
+
+//     .ai-reviews-swiper {
+//       padding: 15px 0;
+
+//       .ai-review-card {
+//         width: 98%;
+//         min-height: 240px;
+//         padding: 15px;
+
+//         .ai-review-text {
+//           font-size: 13px;
+//           max-height: 120px;
+//         }
+//       }
+//     }
+//   }
+// }
+//-4px
+
+
 @import "./theme.scss";
 
 .ai-reviews {
   width: 100vw;
   min-height: 60vh;
-  //background: linear-gradient(135deg, $themeColor1, $themeColor2);
   background: black;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px;
+  padding: 40px 15px;
 
   .ai-reviews-heading {
-    font-size: clamp(20px, 5vw, 36px);
+    font-size: clamp(20px, 5vw, 34px);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -137,7 +438,7 @@
   .ai-reviews-swiper {
     width: 100%;
     max-width: 1000px;
-    padding: 30px 10px;
+    padding: 20px 10px;
 
     .swiper-slide {
       display: flex;
@@ -150,9 +451,10 @@
       background: rgba(255, 255, 255, 0.1);
       color: #ffffff;
       border-radius: 20px;
-      padding: 25px;
-      width: 300px; // 🔹 Fixed width
-      height: 320px; // 🔹 Fixed height
+      padding: 20px;
+      width: 90%;
+      max-width: 300px;
+      height: 320px; /* Ensures consistent card height */
       text-align: center;
       box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.8);
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -181,8 +483,8 @@
         font-style: italic;
         font-size: clamp(14px, 4vw, 16px);
         line-height: 1.4;
-        max-height: 180px; // 🔹 Ensures text doesn't expand card height
-        overflow-y: auto; // 🔹 Enables scrolling if text is too long
+        max-height: 160px; /* Fixed height for content area */
+        overflow-y: auto; /* Scroll if content overflows */
         padding: 8px;
         text-align: center;
         word-break: break-word;
@@ -200,7 +502,17 @@
     }
   }
 
-  /* 📱 Mobile & Tablet View */
+  .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -4px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+  /* Responsive for Tablets */
   @media (max-width: 768px) {
     padding: 30px 10px;
 
@@ -214,19 +526,19 @@
       padding: 20px 5px;
 
       .ai-review-card {
-        width: 90%; /* Full width for mobile */
-        height: 300px; // 🔹 Fixed height for mobile screens
+        width: 95%;
+        height: 300px; /* Ensure fixed height for tablet */
         padding: 20px;
 
         .ai-review-text {
           font-size: 14px;
-          max-height: 160px; // 🔹 Prevents text overflow
+          max-height: 140px; /* Prevents text overflow */
         }
       }
     }
   }
 
-  /* 📱 Small Mobile Screens */
+  /* Responsive for Small Mobile Screens */
   @media (max-width: 480px) {
     .ai-reviews-heading {
       font-size: 20px;
@@ -237,13 +549,13 @@
       padding: 15px 0;
 
       .ai-review-card {
-        width: 95%;
-        height: 280px; // 🔹 Smaller height for small screens
-        padding: 18px;
+        width: 98%;
+        height: 221px; /* Smaller height for small screens */
+        padding: 15px;
 
         .ai-review-text {
           font-size: 13px;
-          max-height: 140px;
+          max-height: 120px; /* Prevents overflow */
         }
       }
     }

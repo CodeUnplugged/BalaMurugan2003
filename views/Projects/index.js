@@ -64,6 +64,9 @@ const ProjectTextSide = (props) => {
                 <WindowScreen containerClassName={`ai-text-image-container`}>
                     <WindowImage src={image} />
                 </WindowScreen>
+                {/* <div className="ai-text-image-container">
+                    <img src={image} alt="Project Image" className="ai-image" />
+                </div> */}
             </div>
             <div
                 data-aos={`zoom-in-${side}`}

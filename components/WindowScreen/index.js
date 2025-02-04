@@ -10,9 +10,9 @@ const WindowScreen = ({ children, containerClassName }) => {
                     <div className='ai-circle ai-circle3' />
                 </div> */}
                 <div className='ai-url'>
-                    <div className='ai-url-box'>
+                    {/* <div className='ai-url-box'>
                         Vellore Institute of Technology, Chennai
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div>

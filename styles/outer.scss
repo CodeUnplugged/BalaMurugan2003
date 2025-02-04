@@ -131,92 +131,315 @@
 //       }
 //     }
 
-    .ai-outer-image {
-      position: relative; /* Keeps the image in its stacking context */
-      flex: 1 1;
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: row;
-      z-index: 3; /* Place the image above the animation */
+
+// // previous animation
+//     .ai-outer-image {
+//       position: relative; /* Keeps the image in its stacking context */
+//       flex: 1 1;
+//       display: flex;
+//       justify-content: flex-end;
+//       flex-direction: row;
+//       z-index: 3; /* Place the image above the animation */
     
-      .ai-image {
-        max-width: 100%;
-        height: 700px;
-        left: 101px;
-        border-radius: 1%;
-        box-shadow: 0px 0px 20px 2px rgb(0 0 0);
-        filter: brightness(1.1) saturate(1.2);
-        transition: transform 0.3s ease, filter 0.3s ease;
+//       .ai-image {
+//         max-width: 100%;
+//         height: 700px;
+//         left: 101px;
+//         border-radius: 1%;
+//         box-shadow: 0px 0px 20px 2px rgb(0 0 0);
+//         filter: brightness(1.1) saturate(1.2);
+//         transition: transform 0.3s ease, filter 0.3s ease;
         
-        &:hover {
-          transform: scale(1.05); /* Subtle zoom-in effect */
-          filter: brightness(1.2) saturate(1.3); /* Highlight on hover */
-        }
-      }
-    }
+//         &:hover {
+//           transform: scale(1.05); /* Subtle zoom-in effect */
+//           filter: brightness(1.2) saturate(1.3); /* Highlight on hover */
+//         }
+//       }
+//     }
     
 
-//     .ai-outer-gooery {
+
+// @import "./theme.scss";
+
+// .ai-outer {
+//   .ai-outer-container {
+//     height: 100vh;
+
+//     .ai-outer-text {
 //       position: absolute;
-//       left: 0;
-//       top: 0;
-//       width: 100vw;
-//       height: 100vh;
-//       z-index: 1; /* Ensure animation is below the text and image */
+//       z-index: 1;
+
+//       .ai-outer-my-name {
+//         margin: 0px 0px 30px 4px;
+//         // color: var(--themeColor4);
+//         font-size: clamp(14px, 5vw, 16px);
+//         font-weight: 600;
+//         line-height: 1;
+//       }
+
+//       .ai-outer-heading {
+//         font-size: clamp(40px, 8vw, 80px);
+//         font-weight: 700;
+//         color: $themeColor3;
+//         line-height: 1;
+//       }
+
+//       .ai-outer-heading2 {
+//         font-size: clamp(20px, 4vw, 40px);
+//         font-weight: 600;
+//         line-height: 1.5;
+//         color: $themeColor4;
+//       }
+
+//       .ai-outer-description {
+//         margin: 20px 0px 0px;
+//         max-width: 540px;
+//         color: $themeColor3;
+//       }
+
+//       .ai-outer-contact {
+//         margin-top: 50px;
+//       }
 //     }
+//   }
+
+//   .ai-outer-gooery {
+//     position: absolute;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     flex: 1;
 //   }
 // }
 
-
+// Import the theme file
 @import "./theme.scss";
 
+// Base styles for .ai-outer
 .ai-outer {
-  .ai-outer-container {
+  .container {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    // overflow: hidden; // Ensure text doesn't overflow the container
 
-    .ai-outer-text {
-      position: absolute;
-      z-index: 1;
+    .ai-outer-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // position: relative;
 
-      .ai-outer-my-name {
-        margin: 0px 0px 30px 4px;
-        // color: var(--themeColor4);
-        font-size: clamp(14px, 5vw, 16px);
-        font-weight: 600;
-        line-height: 1;
+      .ai-outer-text {
+        position: absolute;
+        z-index: 1;
+        flex: 1;
+        padding-right: 20px; // Add some spacing between text and image
+
+        .ai-outer-heading {
+          font-size: clamp(40px, 8vw, 80px);
+          font-weight: 700;
+          color: $themeColor3;
+          line-height: 1;
+        }
+
+        .ai-outer-heading2 {
+          font-size: clamp(20px, 4vw, 40px);
+          font-weight: 600;
+          line-height: 1.5;
+          color: red; // Red color for dynamic text
+          animation: changeText 6s infinite; // Animation for text change
+        }
+
+        .ai-outer-description {
+          margin: 20px 0px 0px;
+          max-width: 540px;
+          color: $themeColor3;
+        }
+
+        .ai-outer-contact {
+          margin-top: 50px;
+
+          .ai-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background-color: $themeColor4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: var(--themeColor4, 10%);
+            }
+          }
+        }
       }
 
-      .ai-outer-heading {
-        font-size: clamp(40px, 8vw, 80px);
-        font-weight: 700;
-        color: $themeColor3;
-        line-height: 1;
+      .ai-outer-image {
+        position: relative;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1; // Ensure the image is above the text
+
+        .ai-image {
+          max-width: 100%;
+          height: 700px;
+          border-radius: 1%;
+          box-shadow: 0px 0px 20px 2px rgb(0 0 0);
+          filter: brightness(1.1) saturate(1.2);
+          transition: transform 0.3s ease, filter 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2) saturate(1.3);
+          }
+        }
       }
 
-      .ai-outer-heading2 {
-        font-size: clamp(20px, 4vw, 40px);
-        font-weight: 600;
-        line-height: 1.5;
-        color: $themeColor4;
-      }
-
-      .ai-outer-description {
-        margin: 20px 0px 0px;
-        max-width: 540px;
-        color: $themeColor3;
-      }
-
-      .ai-outer-contact {
-        margin-top: 50px;
+      .ai-outer-gooery {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        flex: 1;
       }
     }
   }
+}
 
-  .ai-outer-gooery {
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    flex: 1;
+// Responsive Mobile View
+@media (max-width: 768px) {
+  .ai-outer {
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 129vh;
+      padding: 20px;
+      text-align: center;
+
+      .ai-outer-container {
+        display: flex;
+        flex-direction: column;
+
+        // Ensure the image is displayed at the top.
+        .ai-outer-image {
+          order: 1;
+          margin-bottom: 20px; // Spacing between image and text
+          justify-content: center;
+
+          .ai-image {
+            width: 100%;      // Full width on mobile
+            height: auto;     // Maintain aspect ratio
+            max-height: 400px; // Limit the maximum height
+            object-fit: cover;
+          }
+        }
+
+        // Text content below the image.
+        .ai-outer-text {
+          order: 2;
+          margin-top: 65vh;
+          padding-right: 0; // Remove extra right padding for mobile
+
+          .ai-outer-heading {
+            font-size: clamp(30px, 8vw, 60px);
+          }
+
+          .ai-outer-heading2 {
+            font-size: clamp(18px, 4vw, 30px);
+          }
+
+          .ai-outer-description {
+            max-width: 100%;
+            margin: 20px 0;
+          }
+
+          .ai-outer-contact {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+
+    // Hide the animation for better performance on mobile.
+    .ai-outer-gooery {
+      display: none;
+    }
   }
+}
+
+
+// Pleasant Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Text change animation
+@keyframes changeText {
+  0%, 100% {
+    content: "A Lifelong Learner and Innovator";
+  }
+  50% {
+    content: "Speaker at Youth Talk'23";
+  }
+}
+
+// Apply animations to elements
+.ai-outer-text {
+  animation: fadeIn 1s ease-out;
+
+  .ai-outer-heading {
+    animation: slideInRight 1s ease-out;
+  }
+
+  .ai-outer-heading2 {
+    animation: slideInLeft 1s ease-out;
+  }
+
+  .ai-outer-description {
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .ai-outer-contact {
+    animation: fadeIn 2s ease-out;
+  }
+}
+
+.ai-outer-image {
+  animation: slideInRight 1s ease-out;
 }

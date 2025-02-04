@@ -1,3 +1,291 @@
+// @import "./theme.scss";
+
+// .ai-projects {
+//   width: 100vw;
+//   min-height: 100vh;
+
+//   .ai-projects-container {
+//     max-width: 1000px;
+//     padding: 100px 0;
+//     margin: auto;
+//     min-height: 100vh;
+//     padding: 50px 0;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     .ai-projects-single {
+//       margin: 0 0 100px 0;
+//     }
+//     .row {
+//       --bs-gutter-x: 1.5rem;
+//       --bs-gutter-y: 0;
+//       display: flex
+//   ;
+//       flex-wrap: wrap;
+//       margin-top: calc(-1* var(--bs-gutter-y));
+//       margin-right: calc(-0.5* var(--bs-gutter-x));
+//       margin-left: calc(-0.5* var(--bs-gutter-x));
+//   }
+
+//     .blank {
+//       width: 100%;
+//       height: 50px;
+//     }
+
+//     .ai-carousel{
+//       width: 100%;
+//     height: 200px;
+//     object-fit: cover;
+//     border-radius: 8px; /* Add rounded corners for a modern look */
+//     }
+
+//     .ai-carousel-slide {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//   }
+//   .Jags {
+//     width: auto; /* Makes the container take the full width of its parent */
+//     height: auto; /* Makes the container take the full height of its parent */
+//     display: flex; /* Ensures proper alignment of the image inside */
+//     justify-content: center; /* Center-aligns the image horizontally */
+//     align-items: center; /* Center-aligns the image vertically */
+  
+//     img {
+//       width: 100%; /* Image takes full width of the container */
+//       height: 300px; /* Image takes full height of the container */
+//       object-fit: cover; /* Ensures the image covers the entire container without distortion */
+//       border-radius: 8px; /* Optional: Rounded corners */
+//     }
+//   }
+  
+//   .ai-projects-image-container {
+//     width: 100%; /* Full width for responsiveness */
+//     max-width: 400px; /* Set a max-width for the image container */
+//     height: auto; /* Maintain the aspect ratio */
+//     box-shadow: 0 10px 30px -15px $themeColor2; /* Adds a subtle shadow */
+//     overflow: hidden; /* Prevents image overflow */
+    
+//       .ai-image {
+//         width: 100%;
+//       }
+
+//       .ai-taskbar {
+//         background-color: $themeColor2;
+//       }
+//     }
+
+//     .ai-projects-image-container-right {
+//       // margin-left: -20%;
+//       margin-left: 0;
+//     }
+
+//     .ai-projects-text-side {
+//       max-width: 100%;
+//       color: $themeColor3;
+
+//       .ai-projects-text-featured {
+//         margin: 10px 0px;
+//         color: $themeColor4;
+//         font-size: 13px;
+//         font-weight: 400;
+//       }
+
+//       .ai-projects-text-title {
+//         margin: 0px 0px 20px;
+//         font-size: clamp(20px, 5vw, 28px);
+//         font-weight: 600;
+//         line-height: 1;
+//       }
+
+//       .ai-projects-text-description {
+//         box-shadow: 0 10px 30px -15px $themeColor2;
+//         position: relative;
+//         padding: 25px;
+//         border-radius: $defaultBorder;
+//         background-color: $themeColor2;
+//         color: #ffffff;
+//         font-size: 14px;
+
+//         display: flex;
+//         flex-direction: column;
+
+//         .ai-text-image-container {
+//           width: 100%;
+//           box-shadow: 0 10px 30px -15px $themeColor1;
+
+//           .ai-image {
+//             width: 100%;
+//           }
+
+//           .ai-taskbar {
+//             background-color: $themeColor1;
+//           }
+//         }
+//       }
+
+//       .ai-projects-text-tecs {
+//         margin: 25px 0px 10px;
+//         line-height: 1;
+//         font-size: 13px;
+//       }
+//     }
+
+//     .ai-projects-text-side-left {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-end;
+//       text-align: right;
+//     }
+
+//     .ai-projects-text-side-left {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-end;
+//       text-align: right;
+//     }
+
+    
+//   }
+
+  
+// }
+
+
+
+// @media (max-width: 576px) {
+//   .ai-projects {
+//     .Jags {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       width: 100%;
+//       height: auto;
+
+//       img {
+//         width: 100%;
+//         max-width: 100%;
+//         height: auto;
+//         object-fit: contain; /* Ensures full image is visible */
+//         border-radius: 8px;
+//         background: transparent; /* Removes grey background */
+//       }
+//     }
+
+//       img.ai-hover-profile.ai-image {
+//           max-width: 200px;
+//           max-height: 200px;
+//       }
+
+//     .ai-projects-image-container {
+//       width: 100%;
+//       max-width: 100%;
+//       height: auto;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       overflow: hidden;
+//       background: transparent; /* Removes grey background */
+//       box-shadow: none; /* Removes unnecessary shadows */
+//     }
+
+//     .ai-carousel {
+//       width: 100%;
+//       height: auto;
+//       object-fit: contain;
+//       background: transparent; /* Ensures no grey background */
+//     }
+
+//     .ai-carousel-slide {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       background: transparent; /* Removes unwanted grey */
+//     }
+
+//     .ai-projects-text-description {
+//       background: rgba(0, 0, 0, 0.8); /* Subtle dark background for contrast */
+//       color: white;
+//       padding: 15px;
+//       font-size: 14px;
+//       border-radius: 10px;
+//       text-align: center;
+//     }
+
+//     .ai-projects-text-side {
+//       text-align: center;
+//       padding: 10px;
+
+//       .ai-projects-text-title {
+//         font-size: clamp(16px, 5vw, 20px);
+//         font-weight: bold;
+//         color: #333; /* Darker color for better readability */
+//       }
+//     }
+//   }
+// }
+
+// .ai-hover-image {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   max-width: 400px; /* Adjust max-width as needed */
+//   height: auto;
+//   overflow: hidden;
+//   border-radius: 10px; /* Rounded edges */
+  
+//   img {
+//     width: 100%;
+//     height: auto;
+//     object-fit: cover; /* Ensures images are properly displayed */
+//     border-radius: inherit;
+//     transition: transform 0.3s ease-in-out, opacity 0.3s;
+//   }
+
+//   &:hover img {
+//     transform: scale(1.05); /* Subtle zoom effect */
+//     opacity: 0.9;
+//   }
+
+//   .ai-hover-image-border {
+//     position: absolute;
+//     inset: 0;
+//     border: 2px solid rgba(255, 255, 255, 0.6);
+//     border-radius: inherit;
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+//   }
+
+//   &:hover .ai-hover-image-border {
+//     opacity: 1;
+//   }
+
+//   .ai-hover-image-filter {
+//     position: absolute;
+//     inset: 0;
+//     background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+//     border-radius: inherit;
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+//   }
+
+//   &:hover .ai-hover-image-filter {
+//     opacity: 1;
+//   }
+
+//   /* Responsive Design */
+//   @media (max-width: 768px) {
+//     max-width: 100%;
+//     img {
+//       object-fit: contain; /* Ensures full image is visible */
+//     }
+//   }
+// }
+
+
 @import "./theme.scss";
 
 .ai-projects {
@@ -17,56 +305,59 @@
     .ai-projects-single {
       margin: 0 0 100px 0;
     }
+
+    
+
     .row {
       --bs-gutter-x: 1.5rem;
       --bs-gutter-y: 0;
-      display: flex
-  ;
+      display: flex;
       flex-wrap: wrap;
-      margin-top: calc(-1* var(--bs-gutter-y));
-      margin-right: calc(-0.5* var(--bs-gutter-x));
-      margin-left: calc(-0.5* var(--bs-gutter-x));
-  }
+      margin-top: calc(-1 * var(--bs-gutter-y));
+      margin-right: calc(-0.5 * var(--bs-gutter-x));
+      margin-left: calc(-0.5 * var(--bs-gutter-x));
+    }
 
     .blank {
       width: 100%;
       height: 50px;
     }
 
-    .ai-carousel{
+    .ai-carousel {
       width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px; /* Add rounded corners for a modern look */
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px; /* Add rounded corners for a modern look */
     }
 
     .ai-carousel-slide {
       display: flex;
       justify-content: center;
       align-items: center;
-  }
-  .Jags {
-    width: auto; /* Makes the container take the full width of its parent */
-    height: auto; /* Makes the container take the full height of its parent */
-    display: flex; /* Ensures proper alignment of the image inside */
-    justify-content: center; /* Center-aligns the image horizontally */
-    align-items: center; /* Center-aligns the image vertically */
-  
-    img {
-      width: 100%; /* Image takes full width of the container */
-      height: 300px; /* Image takes full height of the container */
-      object-fit: cover; /* Ensures the image covers the entire container without distortion */
-      border-radius: 8px; /* Optional: Rounded corners */
     }
-  }
-  
-  .ai-projects-image-container {
-    width: 100%; /* Full width for responsiveness */
-    max-width: 400px; /* Set a max-width for the image container */
-    height: auto; /* Maintain the aspect ratio */
-    box-shadow: 0 10px 30px -15px $themeColor2; /* Adds a subtle shadow */
-    overflow: hidden; /* Prevents image overflow */
-    
+
+    .Jags {
+      width: auto; /* Makes the container take the full width of its parent */
+      height: auto; /* Makes the container take the full height of its parent */
+      display: flex; /* Ensures proper alignment of the image inside */
+      justify-content: center; /* Center-aligns the image horizontally */
+      align-items: center; /* Center-aligns the image vertically */
+
+      img {
+        width: 100%; /* Image takes full width of the container */
+        height: 300px; /* Image takes full height of the container */
+        object-fit: cover; /* Ensures the image covers the entire container without distortion */
+        border-radius: 8px; /* Optional: Rounded corners */
+      }
+    }
+
+    .ai-projects-image-container {
+      width: 100%; /* Full width for responsiveness */
+      max-width: 400px; /* Set a max-width for the image container */
+      height: auto; /* Maintain the aspect ratio */
+      box-shadow: 0 10px 30px -15px $themeColor2; /* Adds a subtle shadow */
+      overflow: hidden; /* Prevents image overflow */
+
       .ai-image {
         width: 100%;
       }
@@ -77,7 +368,6 @@
     }
 
     .ai-projects-image-container-right {
-      // margin-left: -20%;
       margin-left: 0;
     }
 
@@ -138,134 +428,48 @@
       align-items: flex-end;
       text-align: right;
     }
-
-    .ai-projects-text-side-left {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      text-align: right;
-    }
-
-    
   }
-
-  
 }
-
-// @media (max-width: 576px) {
-//   .ai-projects {
-//     .Jags {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-
-//       img {
-//         width: 100%; /* Ensure the image fits the container's width */
-//         max-width: 300px; /* Limit the maximum width */
-//         height: auto; /* Maintain aspect ratio */
-//         max-height: 200px; /* Set a maximum height */
-//         object-fit: cover; /* Crop image to fit nicely */
-//         border-radius: 8px; /* Optional rounded corners */
-//       }
-//     }
-
-//     img.ai-hover-profile.ai-image {
-//       max-width: 200px;
-//       max-height: 200px;
-//     }
-
-//     .ai-projects-container {
-//       padding: 20px 10px;
-//     }
-
-//     .ai-projects-image-container {
-//       width: 100%;
-//       max-width: 300px; /* Constrain width for mobile */
-//       height: auto;
-//       max-height: 200px; /* Set a maximum height */
-//       margin: 0 auto; /* Center image horizontally */
-//     }
-
-//     .row {
-//       flex-direction: column;
-//       gap: 20px;
-//     }
-
-//     .ai-projects-text-side {
-//       text-align: center;
-//       padding: 10px;
-
-//       .ai-projects-text-title {
-//         font-size: clamp(16px, 5vw, 20px);
-//       }
-
-//       .ai-projects-text-description {
-//         padding: 15px;
-//         font-size: 12px;
-//       }
-//     }
-
-//     .ai-projects-text-side-left {
-//       align-items: center;
-//       text-align: center;
-//     }
-//   }
-// }
-
-
 
 @media (max-width: 576px) {
   .ai-projects {
-    .Jags {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: auto;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        object-fit: contain; /* Ensures full image is visible */
-        border-radius: 8px;
-        background: transparent; /* Removes grey background */
-      }
-    }
-
-      img.ai-hover-profile.ai-image {
-          max-width: 200px;
-          max-height: 200px;
-      }
-
     .ai-projects-image-container {
       width: 100%;
       max-width: 100%;
       height: auto;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
       overflow: hidden;
-      background: transparent; /* Removes grey background */
-      box-shadow: none; /* Removes unnecessary shadows */
+      background: transparent;
+      box-shadow: none;
+
+      .ai-image {
+        width: auto; /* Allows maintaining the original aspect ratio */
+        max-width: 100%; /* Ensures it doesn't exceed the container */
+        height: auto;
+        max-height: 80vh; /* Prevents the image from being too large */
+        object-fit: contain; /* Ensures the full image is visible */
+        border-radius: 8px;
+      }
     }
 
     .ai-carousel {
       width: 100%;
       height: auto;
       object-fit: contain;
-      background: transparent; /* Ensures no grey background */
+      background: transparent;
     }
 
     .ai-carousel-slide {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: transparent; /* Removes unwanted grey */
+      background: transparent;
     }
 
     .ai-projects-text-description {
-      background: rgba(0, 0, 0, 0.8); /* Subtle dark background for contrast */
+      background: rgba(0, 0, 0, 0.8);
       color: white;
       padding: 15px;
       font-size: 14px;
@@ -280,11 +484,22 @@
       .ai-projects-text-title {
         font-size: clamp(16px, 5vw, 20px);
         font-weight: bold;
-        color: #333; /* Darker color for better readability */
+        color: #333;
+      }
+
+      .ai-text-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        background: transparent;
       }
     }
   }
 }
+
 
 .ai-hover-image {
   position: relative;
@@ -296,7 +511,7 @@
   height: auto;
   overflow: hidden;
   border-radius: 10px; /* Rounded edges */
-  
+
   img {
     width: 100%;
     height: auto;
@@ -336,11 +551,11 @@
     opacity: 1;
   }
 
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    max-width: 100%;
-    img {
-      object-fit: contain; /* Ensures full image is visible */
-    }
-  }
+  // /* Responsive Design */
+  // @media (max-width: 768px) {
+  //   max-width: 100%;
+  //   img {
+  //     object-fit: contain; /* Ensures full image is visible */
+  //   }
+  // }
 }
