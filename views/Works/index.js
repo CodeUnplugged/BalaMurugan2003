@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import ViewsTitle from '../../components/ViewsTitle'
