@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function AfzalImdad() {
+export default function BalaMurugan() {
   return (
     <div className="fullscreen-container">
       <h1 className="title">Bala Murugan</h1>

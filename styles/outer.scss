@@ -319,7 +319,7 @@
     .container {
       display: flex;
       flex-direction: column;
-      height: 129vh;
+      height: 95vh;
       padding: 20px;
       text-align: center;
 
@@ -344,7 +344,7 @@
         // Text content below the image.
         .ai-outer-text {
           order: 2;
-          margin-top: 65vh;
+          margin-top: 52vh;
           padding-right: 0; // Remove extra right padding for mobile
 
           .ai-outer-heading {
