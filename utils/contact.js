@@ -9,7 +9,7 @@ const contact = {
         onClick: () => openLink('mailto:balajarvis143@gmail.com?subject=Hello')
     },
     designAndBuiltBy: 'Designed & Built By G Bala Murugan',
-    handleBuiltByClick: () => openLink('https://github.com/')
+    handleBuiltByClick: () => openLink('https://github.com/TheDeveloperOps')
 }
 
 export default contact

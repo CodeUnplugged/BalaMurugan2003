@@ -514,6 +514,7 @@
 
   /* Responsive for Tablets */
   @media (max-width: 768px) {
+    min-height: 45vh;
     padding: 30px 10px;
 
     .ai-reviews-heading {
