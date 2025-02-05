@@ -90,7 +90,7 @@ const Works = ({ data: {
                     <div className="content">
                         <h2>Explore More</h2>
                         <p>Connect with me on LinkedIn to explore my professional journey, skills, and the exciting projects I'm working on. Let's network and collaborate!</p>
-                        <a href="#">Explore My Network</a>
+                        <a href="https://www.linkedin.com/in/bala-murugan-ganesan/">Explore My Network</a>
                     </div>
                 </div>
             </center>
