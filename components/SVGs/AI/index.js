@@ -3,20 +3,42 @@ import React from 'react'
 
 const AI = props => {
 	return (
-		<svg {...props} version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-			<title>AI</title>
-			{/* eslint-disable-next-line react/no-unknown-property */}
-			<style jsx>
-				{`
-		.ai-logo-path-0 { fill: none;stroke: inherit;stroke-width: 10 } 
-		.ai-logo-path-1 { paint-order:stroke fill markers;stroke: inherit;stroke-width: 6;stroke-linejoin: round;;fill: inherit } 
-		.ai-logo-path-2 { fill: none;stroke: inherit;stroke-width: 50 } 
-    `}
-			</style>
-			<path id="Shape 3" className="ai-logo-path-0" d="" />
-			<path id="AI" className="ai-logo-path-1" aria-label="AI" d="m577.8 345q3.5 103 3.5 178 0 85-3.5 159 0 2.5-2.5 2.5l-14-1q-2.5 0-2.5-2.5 3.5-74 3.5-159.5 0-67-2.5-149.5-51.5 58-103.5 94-77-34.5-163-100.5-1.5 60-1.5 118 0 104.5 5 196.5 0 2.5-2.5 2.5l-14 1q-2.5 0-2.5-2.5-5-89.5-5-192 0-63.5 2.5-146 0-2.5 2.5-2.5l16.5 1q82 65.5 159.5 102.5 51.5-37 105-100.5l16.5-1q2.5 0 2.5 2.5zm-13.2 0q3.5 103 3.5 178 0 85-3.5 159 0 2.5-2.5 2.5l-14-1q-2.5 0-2.5-2.5 3.5-74 3.5-159.5 0-67-2.5-149.5-51.5 58-103.5 94-77-34.5-163-100.5-1.5 60-1.5 118 0 104.5 5 196.5 0 2.5-2.5 2.5l-14 1q-2.5 0-2.5-2.5-5-89.5-5-192 0-63.5 2.5-146 0-2.5 2.5-2.5l16.5 1q82 65.5 159.5 102.5 51.5-37 105-100.5l16.5-1q2.5 0 2.5 2.5zm198.7-2.5q1 0 1.5 0.5 1 0.5 0.5 1.5-7.5 42-39.5 96-32 53.5-78 102 43 19.5 74 57 31 37 40.5 80.5 0.5 1-0.5 2-1 1-2 1l-14 1.5q-1.5 0-2.5-2-7-37-34.5-70-27.5-33-66.5-51.5-1 71.5-3.5 120 0 1-1 2-0.5 0.5-1.5 0.5l-14-0.5q-2.5 0-2.5-2.5 4-74.5 4-187.5 0-93-2.5-150 0-2.5 2.5-2.5l14-1q2.5 0 2.5 2.5 2.5 74 2.5 146.5v32q40.5-45.5 68.5-93 28.5-48 35-84 1-2.5 3-2.5zm-13.2 0q1 0 1.5 0.5 1 0.5 0.5 1.5-7.5 42-39.5 96-32 53.5-78 102 43 19.5 74 57 31 37 40.5 80.5 0.5 1-0.5 2-1 1-2 1l-14 1.5q-1.5 0-2.5-2-7-37-34.5-70-27.5-33-66.5-51.5-1 71.5-3.5 120 0 1-1 2-0.5 0.5-1.5 0.5l-14-0.5q-2.5 0-2.5-2.5 4-74.5 4-187.5 0-93-2.5-150 0-2.5 2.5-2.5l14-1q2.5 0 2.5 2.5 2.5 74 2.5 146.5v32q40.5-45.5 68.5-93 28.5-48 35-84 1-2.5 3-2.5z" />
-			<path id="Shape 2" className="ai-logo-path-2" d="m264.5 936.2l-247.5-424.1 247.5-424.1h495l247.5 424.1-247.5 424.1z" />
-		</svg>
+		<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1024 1024"
+  width="200px"
+  height="200px"
+>
+  <title>Realistic Microphone Icon</title>
+
+  <!-- White circular background -->
+  <circle cx="512" cy="512" r="500" fill="white" />
+
+  <!-- Microphone body -->
+  <ellipse cx="512" cy="360" rx="110" ry="160" fill="black" />
+  <rect x="490" y="360" width="40" height="320" rx="10" fill="black" />
+
+  <!-- Microphone grille -->
+  <circle cx="512" cy="280" r="100" fill="#333" />
+  <line x1="450" y1="280" x2="570" y2="280" stroke="#999" stroke-width="10" />
+  <line x1="485" y1="230" x2="540" y2="330" stroke="#999" stroke-width="8" />
+  <line x1="485" y1="330" x2="540" y2="230" stroke="#999" stroke-width="8" />
+
+  <!-- Braces around mic -->
+  <path
+    d="M220 500 L300 400 M220 500 L300 600"
+    stroke="#FF6700"
+    stroke-width="35"
+    stroke-linecap="round"
+  />
+  <path
+    d="M804 500 L724 400 M804 500 L724 600"
+    stroke="#FF6700"
+    stroke-width="35"
+    stroke-linecap="round"
+  />
+</svg>
+
 	)
 }
 
