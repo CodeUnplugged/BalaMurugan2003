@@ -4,7 +4,7 @@ const handleIconClick = (icon) => {
     const links = {
         'github': 'https://github.com/TheDeveloperOps',
         'instagram': 'https://www.instagram.com/inemesis_bxla/',
-        'twitter': 'https://twitter.com/',
+        'Facebook': 'https://www.facebook.com/profile.php?id=100027542168214',
         'linkedin': 'https://www.linkedin.com/in/bala-murugan-ganesan/',
     }
     openLink(links[icon])

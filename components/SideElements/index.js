@@ -4,7 +4,7 @@ import React from 'react'
 import GitHub from '../SVGs/GitHub'
 import Instagram from '../SVGs/Instagram'
 import LinkedIn from '../SVGs/LinkedIn'
-import Twitter from '../SVGs/Twitter'
+import Facebook from '../SVGs/Facebook'
 
 const SideElementsItem = ({ items, position }) => {
     return (
@@ -32,7 +32,7 @@ const SideElements = ({ data: {
                 items={[
                     <GitHub onClick={() => handleIconClick('github')} key="GitHub" width={20} height={20} />,
                     <Instagram onClick={() => handleIconClick('instagram')} key="Instagram" width={20} height={20} />,
-                    <Twitter onClick={() => handleIconClick('twitter')} key="Twitter" width={20} height={20} />,
+                    <Facebook onClick={() => handleIconClick('Facebook')} key="Facebook" width={20} height={20} />,
                     <LinkedIn onClick={() => handleIconClick('linkedin')} key="LinkedIn" width={20} height={20} />,
                 ]}
             />
